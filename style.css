@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(18, 18, 51);
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.box{
+    padding: 20px;
+    background-color: rgb(85, 85, 162);
+    border: 10px;
+    border-radius: 20px;
+}
+
+#UploadYourImageButton{
+    grid-column: 1/4;
+    grid-row: 1/4;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 4em;
+    text-align: center;
+    
+}
+
+#UploadYourImageButton:hover{
+    background-color: rgb(144, 144, 214);
+}
+
+#ImageToPixelArtText{
+    grid-column: 5/7;
+    grid-row: 1/4;
+}
+
+#ResultsButton{
+    grid-column: 8/11;
+    grid-row: 1/4;
+}
+
+#ResultsButton:hover{
+    background-color: rgb(144, 144, 214);
+}
+
+#ConvertButton{
+    grid-column: 5/7;
+    grid-row: 8/8;
+}
+
+#ConvertButton:hover{
+    background-color: rgb(49, 188, 49);
+}
