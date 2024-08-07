@@ -11,8 +11,8 @@ body{
 
 #container{
     display: grid;
-    grid-template-columns: repeat(25, 100px);
-    grid-template-rows: repeat(15, 100px);
+    grid-template-columns: repeat(25, minmax(1%, 1fr));
+    grid-template-rows: repeat(15, minmax(1%, 1fr));
 }
 
 /*-------Stylization of Box class-------*/
@@ -23,7 +23,9 @@ body{
     border-radius: 20px;
     box-shadow: 0px 0px 10px 2px rgb(85, 85, 162);
     font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*-------Stylization of Upload Your Image Button-------*/
